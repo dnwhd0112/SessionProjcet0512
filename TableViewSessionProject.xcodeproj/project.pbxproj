@@ -16,6 +16,9 @@
 		E1FC199C282CD2E8001F4870 /* TableViewSessionProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FC199B282CD2E8001F4870 /* TableViewSessionProjectTests.swift */; };
 		E1FC19A6282CD2E8001F4870 /* TableViewSessionProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FC19A5282CD2E8001F4870 /* TableViewSessionProjectUITests.swift */; };
 		E1FC19A8282CD2E8001F4870 /* TableViewSessionProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FC19A7282CD2E8001F4870 /* TableViewSessionProjectUITestsLaunchTests.swift */; };
+		E1FC19B5282CD3C5001F4870 /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FC19B4282CD3C5001F4870 /* CustomTableCell.swift */; };
+		E1FC19B7282CD7CD001F4870 /* RedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FC19B6282CD7CD001F4870 /* RedCell.swift */; };
+		E1FC19B9282CDEBA001F4870 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FC19B8282CDEBA001F4870 /* Session.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		E1FC19A1282CD2E8001F4870 /* TableViewSessionProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewSessionProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1FC19A5282CD2E8001F4870 /* TableViewSessionProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSessionProjectUITests.swift; sourceTree = "<group>"; };
 		E1FC19A7282CD2E8001F4870 /* TableViewSessionProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSessionProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E1FC19B4282CD3C5001F4870 /* CustomTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
+		E1FC19B6282CD7CD001F4870 /* RedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCell.swift; sourceTree = "<group>"; };
+		E1FC19B8282CDEBA001F4870 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +108,10 @@
 				E1FC1984282CD2E6001F4870 /* AppDelegate.swift */,
 				E1FC1986282CD2E6001F4870 /* SceneDelegate.swift */,
 				E1FC1988282CD2E6001F4870 /* ViewController.swift */,
+				E1FC19B8282CDEBA001F4870 /* Session.swift */,
+				E1FC19B4282CD3C5001F4870 /* CustomTableCell.swift */,
 				E1FC198A282CD2E6001F4870 /* Main.storyboard */,
+				E1FC19B6282CD7CD001F4870 /* RedCell.swift */,
 				E1FC198D282CD2E8001F4870 /* Assets.xcassets */,
 				E1FC198F282CD2E8001F4870 /* LaunchScreen.storyboard */,
 				E1FC1992282CD2E8001F4870 /* Info.plist */,
@@ -260,7 +269,10 @@
 			files = (
 				E1FC1989282CD2E6001F4870 /* ViewController.swift in Sources */,
 				E1FC1985282CD2E6001F4870 /* AppDelegate.swift in Sources */,
+				E1FC19B9282CDEBA001F4870 /* Session.swift in Sources */,
 				E1FC1987282CD2E6001F4870 /* SceneDelegate.swift in Sources */,
+				E1FC19B7282CD7CD001F4870 /* RedCell.swift in Sources */,
+				E1FC19B5282CD3C5001F4870 /* CustomTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
