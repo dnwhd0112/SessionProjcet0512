@@ -36,10 +36,20 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        if indexPath.row == 0 {
+            guard let redCell = customTableView.dequeueReusableCell(withIdentifier: "RedCell", for: indexPath) as? RedCell else {
+                return UITableViewCell()
+            }
+            redCell.redLabel.text = "redcell 입니다."
+            return redCell
+        }
+        
         guard let cell = customTableView.dequeueReusableCell(withIdentifier: "CustomTableCell", for: indexPath) as? CustomTableCell else {
             return UITableViewCell()
         }
+        
         var url: String = ""
+        
         if indexPath.row == 0 {
             url = "https://wallpaperaccess.com/download/europe-4k-1369012"
         } else if indexPath.row == 1 {
@@ -48,16 +58,16 @@ extension ViewController: UITableViewDataSource {
             url = "https://wallpaperaccess.com/download/europe-4k-1379801"
         }
         
-        if cell.myImageView.image == nil {
-            session.startLoad(url: url) { image in
-                DispatchQueue.main.async {
+        session.startLoad(url: url) { image in
+            
+            DispatchQueue.main.async {
+                
+                if tableView.indexPath(for: cell) == indexPath {
+                    
                     cell.myImageView.image = image
+                    
                 }
             }
-        }
-        
-        if url == "" {
-            cell.myImageView.image = nil
         }
         
         cell.cellLabel.text = "\(indexPath.section), \(indexPath.row)"

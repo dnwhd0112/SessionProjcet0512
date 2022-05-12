@@ -57,6 +57,31 @@
                                             <outlet property="myImageView" destination="eMq-o2-83U" id="V4r-17-odA"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RedCell" id="iKh-Cz-qTi" customClass="RedCell" customModule="TableViewSessionProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="213.5" width="414" height="63.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iKh-Cz-qTi" id="fG1-0z-qll">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="63.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CP5-Pz-S4R">
+                                                    <rect key="frame" x="30" y="21" width="354" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="CP5-Pz-S4R" secondAttribute="trailing" constant="10" id="Udx-cn-QdF"/>
+                                                <constraint firstItem="CP5-Pz-S4R" firstAttribute="top" secondItem="fG1-0z-qll" secondAttribute="topMargin" constant="10" id="Uyd-l7-QNz"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="CP5-Pz-S4R" secondAttribute="bottom" constant="10" id="bSa-h0-EIH"/>
+                                                <constraint firstItem="CP5-Pz-S4R" firstAttribute="leading" secondItem="fG1-0z-qll" secondAttribute="leadingMargin" constant="10" id="hWd-AE-Y6g"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="redLabel" destination="CP5-Pz-S4R" id="TMo-ZD-lzp"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="8bC-Xf-vdC" id="EpL-6i-tS4"/>

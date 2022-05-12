@@ -12,4 +12,11 @@ class CustomTableCell: UITableViewCell {
     
     @IBOutlet var cellLabel: UILabel!
     @IBOutlet var myImageView: UIImageView!
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        cellLabel.text = nil
+        myImageView.image = nil
+    }
 }
