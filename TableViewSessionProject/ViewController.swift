@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var customTableView: UITableView!
-    var session = Session()
+    //var session = Session()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,6 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITableViewDelegate {
-    
     
 }
 
@@ -50,23 +49,18 @@ extension ViewController: UITableViewDataSource {
         
         var url: String = ""
         
-        if indexPath.row == 0 {
+        if indexPath.row % 3 == 0 {
             url = "https://wallpaperaccess.com/download/europe-4k-1369012"
-        } else if indexPath.row == 1 {
+        } else if indexPath.row % 3 == 1 {
             url = "https://wallpaperaccess.com/download/europe-4k-1318341"
-        } else if indexPath.row == 2 {
+        } else if indexPath.row % 3 == 2 {
             url = "https://wallpaperaccess.com/download/europe-4k-1379801"
         }
         
-        session.startLoad(url: url) { image in
+        DispatchQueue.main.async {
             
-            DispatchQueue.main.async {
-                
-                if tableView.indexPath(for: cell) == indexPath {
-                    
-                    cell.myImageView.image = image
-                    
-                }
+            if tableView.indexPath(for: cell) == indexPath {
+                cell.myImageView.setImage(with: url)
             }
         }
         
